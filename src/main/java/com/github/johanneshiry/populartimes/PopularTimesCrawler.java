@@ -30,7 +30,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package com.github.johanneshiry.populartimes.main;
+package com.github.johanneshiry.populartimes;
 
 import com.github.johanneshiry.populartimes.utils.GooglePlace;
 import com.github.johanneshiry.populartimes.utils.LatLong;
@@ -68,9 +68,9 @@ public class PopularTimesCrawler {
 
     //google stuff
     String radarUrl          =
-                    "https://maps.googleapis.com/maps/api/place/radarsearch/json?location=%s,%s&radius=%s&type=%s&keyword=%s&key=%s";
+                    "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=%s,%s&radius=%s&type=%s&keyword=%s&key=%s";
     String radarUrlNoKeyword =
-                    "https://maps.googleapis.com/maps/api/place/radarsearch/json?location=%s,%s&radius=%s&type=%s&key=%s";
+                    "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=%s,%s&radius=%s&type=%s&key=%s";
     String detailUrl         = "https://maps.googleapis.com/maps/api/place/details/json?placeid=%s&key=%s";
 
     String userAgent =
